@@ -661,6 +661,11 @@ footer img {
     span.menu-label{  
         display: none;
     }
+    
+    .contenido-header>img{
+        width: 450px;
+    }   
+
     /* .hamburgerclose{
         display: flex;
     } */
