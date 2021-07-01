@@ -614,6 +614,15 @@ footer img {
 
 @media screen and (max-width:1024px){
     
+    
+    .contenedor{
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+
+    }
+    
     .nav .logo img{
         /* border: 1px solid pink; */
         height: 100%;
