@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <title>Estudios Digital</title>
@@ -17,79 +18,88 @@
         <nav>
             <section class="contenedor nav">
                 <div class="logo">
-                    <a href="/"><img src="img/EstudioDigital.png" alt="Estudios Digital"></a>
+                    <a href="/"><img src="img/Logo_Estudios_Digital_Peru.png" alt="Estudios Digital"></a>
                 </div>
                 <div id="menudesplegable" class="enlaces-header">
                     <a href="#" class="selected">Inicio</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#">Contacto</a>
-                    <a href="#">Portafolio</a>
-                    <a href="#">Ubicacion
+                    <a href="#servicios">
+                        <!-- <span class="">Servicios</span> -->
+                        <span class="nav-link-text">Servicios</span>
+                    </a>
+                    <!-- <a href="https://web.whatsapp.com/send?phone=51969466850&text=%F0%9F%91%8B%20Hola%20soy%20aaa%20%0ADeseo%20estos%20productos:%20%0A%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%97%0A%E2%9C%85%20Capit%C3%A1n%20Marvel%20Funko%20%20%0A%0AModelo:%20Con%20cabello%20corto%20($15)%0A%F0%9F%93%A6%20unidad:%201%0A%F0%9F%92%B5%20SubTotal%20=%20$15%0A%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%97%0A%E2%9C%85%20Polera%20Gucci%20Roja%20%20%0A%0ATalla:%20M%20($55)%0A%F0%9F%93%A6%20unidades:%203%0A%F0%9F%92%B5%20SubTotal%20=%20$165%0A%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%90%E2%95%97%0A%E2%9C%85%20Bolso%20lila%20pastel%20%20%0A%0ATama%C3%B1o:%20Mediano%20($150)%0A%F0%9F%93%A6%20unidad:%201%0A%F0%9F%92%B5%20SubTotal%20=%20$150%0A%0A---------%0A%F0%9F%92%B0%20Total%20a%20pagar:%20$330.00%20%0A%0Anota:%20aaaa%0A%0A%20%20%20%20"><span class="">Contacto</span></a> -->
+                    <a href="#contacto">Contacto</a>
+                    <a href="#portafolio">Portafolio</a>
+                    <!-- <a href="https://api.whatsapp.com/send?phone=51969466850&text=Hola%20informaci%C3%B3n">Portafolio</a> -->
+                    <a href="#ubicacion">Ubicacion
                         <span class="menu-label menu-label-primary">Pronto</span>
                     </a>
                 </div>
                 <div id="btnburger" class="hamburger">
                     <i class="fas fa-bars"></i>
                 </div>
-                <div id="btndiv" class="hamburgerclose">
+                <!-- <div id="btndiv" class="hamburgerclose">
                     <span id="spn1"></span>
                     <span id="spn2"></span>
-                </div>
+                </div> -->
             </section>
         </nav>
-        <div class="contenedor">
+        
+
+        <!-- MAIN -->
+
+        <div id="inicio" class="contenedor">
             <section class="contenido-header">
                 <section class="textos-header">
                     <h1>Nuestra Creatividad es tu éxito</h1>
                     <p>Dedicados a brindarte un gran servicio y generar tus propios clientes</p>
-                    <a href="#">Learn more</a>
+                    <a href="#">Contactanos</a>
                 </section>
-                <img src="img/EstudiosDigital_Paginasweb.jpg" alt="Estudios Digital Fondo">
+                <img src="img/EstudiosDigital_Paginasweb.svg" alt="Estudios Digital Fondo">
             </section>
         </div>
     </header>
 
-    <section  class="about-us" id="servicios">
+    <section  id="servicios" class="about-us">
         <div  class="contenedor1">
             <h2  class="titulo">Proveemos una amplia experiencia</h2>
             <div class="contenedor-articulo">
                 
-                <div class="articulo">
+                <div class="articulo" data-aos="zoom-in-right" data-aos-duration="1000">
                         <i class="fas fa-pen-fancy"></i>
                         <h3>Diseño web</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas aliquid minima dicta commodi itaque ipsa deserunt vel assumenda alias.</p>
                     <a href="#">Read more ---></a>
                 </div>
             
-                <div class="articulo">
+                <div class="articulo" data-aos="zoom-in-right" data-aos-duration="1000">
                         <i class="fas fa-code"></i>
                         <h3>Diseño gráfico</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas aliquid minima dicta commodi itaque ipsa deserunt vel assumenda alias.</p>
                     <a href="#">Read more ---></a>
                 </div>
             
-                <div class="articulo">
+                <div class="articulo" data-aos="zoom-in-right" data-aos-duration="1000">
                         <i class="fas fa-cog"></i>
                         <h3>Video Producción</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas aliquid minima dicta commodi itaque ipsa deserunt vel assumenda alias.</p>
                     <a href="#">Read more ---></a>
                 </div>
             
-                <div class="articulo">
+                <div class="articulo" data-aos="zoom-in-right" data-aos-duration="1000">
                         <i class="fas fa-chart-pie"></i>
                         <h3>SEO</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas aliquid minima dicta commodi itaque ipsa deserunt vel assumenda alias.</p>
                     <a href="#">Read more ---></a>
                 </div>
             
-                <div class="articulo">
+                <div class="articulo" data-aos="zoom-in-right" data-aos-duration="1000">
                         <i class="fas fa-comments"></i>
                         <h3>Marketing Digital</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas aliquid minima dicta commodi itaque ipsa deserunt vel assumenda alias.</p>
                     <a href="#">Read more ---></a>
                 </div>
             
-                <div class="articulo">
+                <div class="articulo" data-aos="zoom-in-right" data-aos-duration="1000">
                         <i class="fas fa-chart-bar"></i>
                         <h3>Facturación Electrónica</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas aliquid minima dicta commodi itaque ipsa deserunt vel assumenda alias.</p>
@@ -101,32 +111,32 @@
 
     <!-- Se ha realizado hasta servicios -->
 
-    <section class="questions contenedor">
+    <section id="contacto" class="questions contenedor">
         <section class="textos-question">
             <h3>Nuestra idea es que atraigas clientes</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae accusantium enim pariatur officiis repudiandae reprehenderit, dolorum porro nostrum totam possimus.</p>
             <a href="#">Read more</a>
         </section>
-        <img src="img/EstudiosDigital_SEO.jpg" alt="Posicionamiento de Páginas web">
+        <img src="img/Estudios_Digital_contacto.svg" alt="Posicionamiento de Páginas web" data-aos="zoom-in-right" data-aos-duration="1000">
     </section>
     
     
-    <section class="results">
-            <div class="contenedor1 conten-results">
+    <section id="portafolio" class="results">
+            <div class="contenedor1 conten-results" >
                 <section class="numbers">
-                    <div class="number">
+                    <div class="number" data-aos="zoom-in-right" data-aos-duration="1000">
                         <h4>+150</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sint!</p>
                     </div>
-                    <div class="number">
+                    <div class="number" data-aos="zoom-in-right" data-aos-duration="1000">
                         <h4>+250</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sint!</p>
                     </div>
-                    <div class="number">
+                    <div class="number" data-aos="zoom-in-right" data-aos-duration="1000">
                         <h4>+350</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sint!</p>
                     </div>
-                    <div class="number">
+                    <div class="number" data-aos="zoom-in-right" data-aos-duration="1000">
                         <h4>+450</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sint!</p>
                     </div>
@@ -141,20 +151,20 @@
     
 
     <section class="contenedor1 services" >
-        <img src="img/EstudiosDigital_background.jpg" alt="Estudios Digital Fondo">
+        <img src="img/Estudios_Digital_Portafolio.svg" alt="Estudios Digital Portafolio">
         <div class="box-skills">
-            <h4><i class="far fa-check-circle"></i>Diseño Web</h4>
-            <h4><i class="far fa-check-circle"></i>Diseño Gráfico</h4>
-            <h4><i class="far fa-check-circle"></i>SEO</h4>
-            <h4><i class="far fa-check-circle"></i>Marketing Digital</h4>
-            <h4><i class="far fa-check-circle"></i>Facturación Electrónica</h4>
+            <h4 data-aos="zoom-in-right" data-aos-duration="1000"><i class="far fa-check-circle"></i>Diseño Web</h4>
+            <h4 data-aos="zoom-in-right" data-aos-duration="1000"><i class="far fa-check-circle"></i>Diseño Gráfico</h4>
+            <h4 data-aos="zoom-in-right" data-aos-duration="1000"><i class="far fa-check-circle"></i>SEO</h4>
+            <h4 data-aos="zoom-in-right" data-aos-duration="1000"><i class="far fa-check-circle"></i>Marketing Digital</h4>
+            <h4 data-aos="zoom-in-right" data-aos-duration="1000"><i class="far fa-check-circle"></i>Facturación Electrónica</h4>
         </div>
     </section>
 
     <footer>
-    
-        <img src="img/EstudioDigital.png" alt="Estudios Digital" width="160px" height="160px">
-        
+         <div id="ubicacion" class="imgfooter">
+        <img src="img/Logo_Estudios_Digital_Peru_bg.png" alt="Estudios Digital" width="160px" height="160px">
+        </div>
         <div class="partFooter">
             <h4>Ubicanos</h4>
             <a href="#">Servicios 1</a>
@@ -178,9 +188,16 @@
                 
             </div>
         </div>
+        
+     
     </footer>
 
+    <div class="copyright">
+        &copy; 2018-<script type="text/javascript">document.write(new Date().getFullYear());</script> Joseph Marchena.
+    </div>
+
     <script src="https://kit.fontawesome.com/3ec18a4dd6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 
 </body> 

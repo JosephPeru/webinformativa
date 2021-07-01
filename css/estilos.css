@@ -1,4 +1,5 @@
-/* TODO- Variables globales*/
+
+/*========================================================== TODO- Variables globales=====================================================*/
 
 *{
     margin: 0;
@@ -21,7 +22,7 @@ h1, h2, h3, h4, h5, h6{
     width: 90%;
     max-width: 1000px;
     margin: auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -46,7 +47,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/*TODO - SECCION ESTILOS AL NAV*/
+/*====================================TODO - SECCION ESTILOS AL NAV DEL MENU========================================*/
 
 header::before {
     content: "";
@@ -66,7 +67,7 @@ nav{
     position: fixed;
     top: 0;
     z-index: 100;
-    /* transition: ease-in-out 0.5s; */
+    transition: ease-in-out 0.5s;
 }
 
 .nav{
@@ -79,8 +80,8 @@ nav{
 }
 
 .nav .logo{
-    /* border: 1px solid yellow; */
-    height: 60px;
+   /*  border: 1px solid yellow; */
+    height: 100%;
 
 }
 
@@ -95,6 +96,8 @@ nav{
 }
 
 
+/*==ESTILO DE COLOR AL LINK FIRST CHILD DEL MENU POR DEFECTO==*/
+
 .nav .enlaces-header .selected{
     background: #1FDE82;
     padding: 10px;
@@ -106,24 +109,24 @@ nav{
     color: #fff;
 }
 
+/*=========ENLACES DEL MENU==========*/
+
 .nav .enlaces-header a{
     color: #5D6678;
     text-decoration: none;
     margin-left: 20px;
+    display: inline-block;
+    position: relative;
+    /* background: blueviolet; */
 }
 
 .nav .enlaces-header a:hover{
     color: #1FDE82;
     font-weight: 300;
-    border-bottom: 1px solid #1FDE82;
+    /* border-bottom: 1px solid #1FDE82; */
 }
 
-
-
-.menu-label-primary{
-    background-color: #1FDE82;
-    
-}
+/*==ESTILOS DE ETIQUETA (PRONTO) SUPERIOR DE TEXTO==*/
 
 
 span.menu-label{  
@@ -132,20 +135,22 @@ span.menu-label{
     font-size: 9px;
     line-height: 12px;
     padding: 2px 4px;
+    
 }
 
 .menu-label{
     color: #fff;
     position: absolute;
-    bottom: 65%;
+    bottom: 95%;
     display: inline-block;
     margin-left: -10px;
     text-transform: uppercase;
     vertical-align: middle;
+    z-index: 100;
+    background-color: #1FDE82;
 }
 
-
-.menu-label::before{
+.menu-label-primary::before{
     content: "";
     position: absolute;
     top: 100%;
@@ -158,14 +163,30 @@ span.menu-label{
     border-right-width: 7px;
     border-left-width: 0;
     border-right-color: transparent!important;
-    
-}
-
-.menu-label-primary::before{
     border-color: #1FDE82;
     
 }
 
+
+/*==TRANSICIONES EN MENU =====> EFECTO LINEA EN LOS LINKS DEL MENU==*/
+
+.enlaces-header a:after{
+    content: '';
+    position: absolute;
+    display: block;
+    background: #1FDE82;
+    width: 0;
+    height: 2px;
+    transition: width .4s cubic-bezier(.175,.885,.32,1.15);
+}
+
+.enlaces-header a:hover:after{
+    width: 100%;
+}
+
+
+
+/*==ESTILOS MENU HAMBURGUESA==*/
 
 .hamburger{
     width: 80px;
@@ -216,8 +237,13 @@ span.menu-label{
     transform: rotate(-140deg);
 }
 
+
+
+/*=================================================TODO - SECCION DEL MAIN=====================================*/
+
+
 .contenido-header{
-    border: 1px solid violet;
+    /* border: 1px solid blue; */
     width: 100%;
     height: 600px;
     display: flex;
@@ -239,13 +265,13 @@ span.menu-label{
 }
 
 .textos-header{
-    margin: 0 0 0 30px;
+    margin: 0 0 0 50px;
 }
 
 .textos-header p{
     font-weight: 350;
-    margin-top: 14px;
-    color: #5D6678;
+    margin-top: 1px;
+    color: #0b0e0b;
 }
 
 .textos-header a{
@@ -264,16 +290,17 @@ span.menu-label{
     box-shadow: 0 8px 32px rgba(0, 0, 0, .46);
 }
 
+
+/*=================================================TODO - SECCIÓN ACERCA DE================================*/
+
 .titulo{
     
     font-size: 50px;
 }
 
-/*TODO - SECCIÓN ACERCA DE*/
-
-.about-us{
+/* .about-us{
     border: 1px solid orange;
-}
+} */
 
 .contenedor-articulo{
     display: flex;
@@ -334,7 +361,7 @@ span.menu-label{
     border-bottom: 1px solid #1FDE82;
 }
 
-/* TODO Este es otra seccion de QUESTIONS */
+/*======================================TODO - SECCION DE QUESTIONS============================================*/
 
 h3{
     font-size: 40px;
@@ -379,7 +406,7 @@ h3{
     font-weight: 400;
 }
 
-/* TODO - SECCION DE RESULTADOS DE EXPERIENCIA */
+/*====================================TODO - SECCION DE RESULTADOS DE PROYECTOS DE EXPERIENCIA======================*/
 
 .results{
     background: #2570ff;
@@ -456,7 +483,7 @@ h3{
     font-weight: 800;
 }
 
-/* TODO - Sección de Skills */
+/*============================================TODO - SECCION DE SKILSS================================= */
 
 .services{
     display: flex;
@@ -465,11 +492,12 @@ h3{
 
 .services img{
     width: 500px;
-    box-shadow: 0 8px 32px rgba(4, 43, 24, 0.46);
+    /* box-shadow: 0 8px 32px rgba(4, 43, 24, 0.46); */
 }
 
 .box-skills{
     margin: 30px 30px 0 30px;
+    /* border: 1px solid magenta; */
     
 }
 
@@ -490,7 +518,7 @@ h3{
     margin-right: 15px;
 }
 
-/* TODO - SECCION FOOTER */
+/*============================================TODO - SECCION FOOTER===========================================*/
 
 footer{
     background: #f2f2f2;
@@ -530,8 +558,8 @@ footer .partFooter{
 }
 
 footer img {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 80px;
     /* background: #1FDE82; */
     margin-top: 10px ;
 }
@@ -558,13 +586,46 @@ footer img {
     border-color: #1FDE82;
 }
 
+.copyright{
+
+    display: block; text-align: center; margin-top: 05px; bottom: 0; background: #454545;
+    color: rgba(255, 255, 255, 0.7); padding: 20px;
+}
+
+
+/* ==================================================MEDIDAS PARA TABLETS ===================================================*/
+
+
+@media screen and (max-width:1050px) and (min-width: 1025px){
+   
+    .enlaces-header{       
+        margin-right: 40px ;
+    }
+    
+
+    .nav .logo img{
+        /* border: 1px solid pink; */
+        height: 100%;
+        vertical-align: top;
+        margin-left: 30px;
+    }
+}
+
+
 @media screen and (max-width:1024px){
+    
+    .nav .logo img{
+        /* border: 1px solid pink; */
+        height: 100%;
+        vertical-align: top;
+        margin-left: 30px;
+    }
 
     .nav .enlaces-header{
         position: fixed;
-        background: #667db6;
-        background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
-        background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6 );
+        background: #73C8A9;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #373B44, #73C8A9);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #373B44, #73C8A9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         top: 0;
         right: 0;
         width: 100%;
@@ -575,10 +636,12 @@ footer img {
         justify-content: space-evenly;
         text-transform: uppercase;
         clip-path: circle(0.0% at 100% 0);
+        transition: ease-in-out 0.5s;
     }
 
     .nav .enlaces-header>a{ 
         color: #fff; 
+        font-weight: 400;
     }
 
     .nav .enlaces-header>a:hover{ 
@@ -586,20 +649,384 @@ footer img {
     }
 
     .nav .menudos{
-        -webkit-clip-path: circle(20% at 20% 0);
+        -webkit-clip-path: circle(150% at 100% 0);
         clip-path: circle(150% at 100% 0);
     }
 
     .hamburger{
         display: block;
+        transition: ease-in-out 0.8s;
     }
 
-    .hamburgerclose{
+    span.menu-label{  
+        display: none;
+    }
+    /* .hamburgerclose{
         display: flex;
-    }
+    } */
 
-   /*  .fa-bars:before{
+
+    /*  .fa-bars:before{
         display: none;
     } */
 
 }
+
+@media screen and (max-width: 800px) {
+    
+
+    /*===========ESTILOS AL CONTENIDO DEL MAIN=============*/
+
+    .contenido-header{
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 720px;
+    }
+
+    .contenido-header img{
+        width: 450px;
+    }
+
+    .textos-header{
+        margin: 0;
+    }
+
+    .textos-header h1{
+        font-size: 40px;
+    }
+
+    .textos-header p{
+        text-align: center;
+    }
+
+    .textos-header a{
+        margin: 50px auto;
+    }
+
+    /*===========ESTILOS AL CONTENIDO DEL ABOUT US=============*/
+
+
+    .titulo{
+        font-size: 40px;
+        /* text-align: center; */
+    }
+
+    .articulo{
+        width: 45%;
+    }
+
+    
+    /*===========ESTILOS AL CONTENIDO DEL QUESTIONS=============*/
+
+
+    .questions{
+        height: 720px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    } 
+
+    .textos-question a{
+        margin-top: 40px;
+    }
+
+    .textos-question h3{
+        font-size: 40px;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+    
+    .questions>img{
+        margin-top: -100px;
+        width: 450px;
+    }
+
+     /*===========ESTILOS AL CONTENIDO DEL RESULTS=============*/
+
+    .conten-results{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .results-text>a {
+        margin-bottom: 50px;
+    }
+
+    .numbers{
+        width: 100%;
+    }
+
+
+    /*===========ESTILOS AL CONTENIDO DEL SERVICES=============*/
+
+    .services{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .services img{
+        width: 450px;
+    }
+
+    .box-skills{
+        margin-top: 50px;
+        /* width: 100%; */
+        
+    }
+    
+    .box-skills h4{
+        width: 500px;
+       /*  float: left;
+        align-items: center;
+        margin-bottom: 20px; */
+    }
+
+     /*===========ESTILOS AL CONTENIDO DEL FOOTER=============*/    
+
+    footer{
+        justify-content: space-evenly;
+    }
+
+    .imgfooter{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer img{
+        /* margin: 0 0 40px 0; */
+        display: block;
+        margin: 0 auto 40px;   
+    }
+
+    footer .partFooter{
+        width: 40%;
+        margin-bottom: 25px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+    /*===========ESTILOS AL CONTENIDO DEL MAIN=============*/
+
+    .textos-header h1 {
+        font-size: 35px;
+    }
+    
+    .textos-header p {
+        font-size: 15px;
+    }
+
+    /*===========ESTILOS AL CONTENIDO DEL ABOUT=============*/
+
+
+    .titulo{
+        font-size: 30px;
+    }
+
+    .articulo h3{
+        font-size: 18px;
+    }
+
+    .articulo p{
+        font-size: 14px;
+    }
+
+    .articulo>a{
+        font-size: 15px;
+    }
+    
+    /*===========ESTILOS AL CONTENIDO DEL QUESTIONS=============*/
+    
+    .textos-question h3{
+        font-size: 30px;
+    }
+
+    .textos-question p {
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    /*===========ESTILOS AL CONTENIDO DEL RESULTS=============*/
+
+
+    .numbers .number h4{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .numbers .number{
+        width: 100%;
+    }
+
+    .results-text h4 {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .results-text p{
+        font-size: 15px;
+    }
+
+
+    /*===========ESTILOS AL CONTENIDO DEL SERVICES=============*/
+
+    .box-skills h4{
+        font-size: 16px; 
+    }
+
+    /*===========ESTILOS AL CONTENIDO DEL FOOTER=============*/
+
+    .partFooter h4{
+        font-size: 16px;
+    }
+
+    .partFooter a{
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 521px) {
+
+    /*===========ESTILOS AL CONTENIDO DEL MAIN=============*/
+        
+
+    .textos-header{
+        margin-top: 80px;
+    }
+
+    .contenido-header{
+        height: 550px;
+    }
+
+    .textos-header h1 {
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .contenido-header img{
+        width: 250px;
+    }
+        
+    /*===========ESTILOS AL CONTENIDO DEL ABOUT=============*/
+
+    .titulo{
+        font-size: 25px;
+    }
+
+    .articulo{
+        width: 100%;
+    }
+
+    .articulo h3{
+        text-align: center;
+    }
+
+    .articulo>a{
+        display: block;
+        text-align: center;  
+    }
+
+    /*===========ESTILOS AL CONTENIDO DEL QUESTIONS=============*/
+
+    .questions{
+        height: 580px;
+    }
+
+    .questions img{
+        margin-top: -10px;
+    }
+
+    .textos-question h3{
+        font-size: 25px;
+    }
+
+    .questions img{
+        width: 250px;
+    }
+
+    /*===========ESTILOS AL CONTENIDO DEL RESULTS=============*/
+
+    
+    .numbers .number h4{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .numbers .number{
+        width: 100%;
+    }
+
+    .results-text{
+        width: 95%;
+    }
+
+    .results-text h4{
+        font-size: 25px;
+    }
+
+    .results-text p{
+        margin-bottom: 45px;
+    }
+
+    /*===========ESTILOS AL CONTENIDO DEL SERVICES=============*/
+    
+    .services img{
+        width: 250px;
+    }
+
+    .box-skills{
+        width: 100%;
+    }
+
+    .box-skills h4{
+        display: block;
+        width: 95%;
+        font-size: 16px; 
+    }
+
+
+    /*===========ESTILOS AL CONTENIDO DEL FOOTER=============*/
+
+
+    .partFooter h4{
+        font-size: 16px;
+    }
+
+    .partFooter a{
+        font-size: 14px;
+    }
+
+    
+}
+
+@media screen and (max-width: 499px) {
+
+    .numbers .number{
+        width: 100%;
+    }
+
+    
+    .numbers .number h4{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .numbers .number{
+        width: 100%;
+    }
+
+}
+
+
+
+
